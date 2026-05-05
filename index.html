@@ -240,7 +240,7 @@ hr.modal-hr{border:none;border-top:1px solid var(--border);margin:16px 0;}
     <input type="file" id="file-human" accept=".xml" style="display:none" onchange="handleFileUpload('human', this)">
     <span class="file-name file-none" id="fname-human">Ingen fil valgt</span>
   </div>
-  <div class="upload-row">
+<div class="upload-row">
     <span class="pbadge pbadge-v">Vet</span>
     <label class="file-btn" for="file-vet">
       <i class="bi bi-upload"></i>Last opp FEST XML
@@ -251,6 +251,15 @@ hr.modal-hr{border:none;border-top:1px solid var(--border);margin:16px 0;}
   <div id="progress-area" style="display:none;flex:1;min-width:200px;">
     <div style="font-size:11px;color:var(--muted);" id="progress-label">Parser XML…</div>
     <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  </div>
+  <div style="width:100%;font-size:11px;color:var(--muted);padding:4px 4px 0;border-top:1px solid var(--border-lt);margin-top:4px;">
+    Last ned FEST-filer fra
+    <a href="https://www.dmp.no/om-oss/distribusjon-av-legemiddeldata/fest" target="_blank" rel="noopener"
+       style="color:var(--primary);text-decoration:underline;text-underline-offset:2px;">www.dmp.no → FEST</a>
+    — pakk ut ZIP-filen og last opp
+    <code style="font-family:var(--font-mono);background:var(--bg);padding:1px 4px;border-radius:3px;border:1px solid var(--border);">.xml</code>-filen herfra.
+    &nbsp;·&nbsp; Human FEST: <code style="font-family:var(--font-mono);background:var(--bg);padding:1px 4px;border-radius:3px;border:1px solid var(--border);">fest*.xml</code>
+    &nbsp;·&nbsp; Vet FEST: <code style="font-family:var(--font-mono);background:var(--bg);padding:1px 4px;border-radius:3px;border:1px solid var(--border);">fest*veterinar*.xml</code>
   </div>
 </div>
 
